@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validasi HTML</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Form Validasi HTML</h1>
+
+    <form>
+
+        <input 
+            type="text" 
+            placeholder="Nama"
+            required 
+            minlength="3" 
+            maxlength="50">
+
+        <input 
+            type="email" 
+            placeholder="Email"
+            required>
+
+        <input 
+            type="number" 
+            placeholder="Nilai 1-100"
+            min="1" 
+            max="100" 
+            step="5">
+
+        <input 
+            type="text" 
+            placeholder="Minimal 3 huruf"
+            pattern="[A-Za-z]{3,}" 
+            title="Min 3 huruf">
+
+        <input 
+            type="url" 
+            placeholder="https://...">
+
+        <input 
+            type="text" 
+            placeholder="Nama lengkap"
+            autocomplete="name">
+
+        <button type="submit">
+            Kirim
+        </button>
+
+    </form>
+
+</body>
+</html>

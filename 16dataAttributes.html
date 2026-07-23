@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Data Attributes</title>
+</head>
+
+<body>
+
+    <h1>HTML Data Attributes</h1>
+
+    <!-- Menyimpan data custom -->
+    <div data-user-id="123" data-role="admin">
+        User Admin
+    </div>
+
+    <br>
+
+    <button data-action="delete" data-id="42">
+        Hapus
+    </button>
+
+    <p id="hasil"></p>
+
+
+    <script>
+        const el = document.querySelector('[data-user-id]');
+        const userId = el.dataset.userId; // "123"
+    </script>
+
+</body>
+</html>
