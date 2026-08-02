@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>String JavaScript</title>
+</head>
+
+<body>
+
+<h1>String JavaScript</h1>
+
+<script>
+const teks = "Hello, World!";
+
+document.write("<h3>Hasil String Method</h3>");
+document.write("Length: " + teks.length + "<br>");
+document.write("UpperCase: " + teks.toUpperCase() + "<br>");
+document.write("LowerCase: " + teks.toLowerCase() + "<br>");
+document.write("charAt(0): " + teks.charAt(0) + "<br>");
+document.write("indexOf('World'): " + teks.indexOf("World") + "<br>");
+document.write("includes('World'): " + teks.includes("World") + "<br>");
+document.write("slice(0,5): " + teks.slice(0,5) + "<br>");
+document.write("replace(): " + teks.replace("World","JS") + "<br>");
+document.write("split(): " + teks.split(", ") + "<br>");
+document.write("trim(): '" + teks.trim() + "'<br>");
+document.write("startsWith('Hello'): " + teks.startsWith("Hello") + "<br>");
+document.write("endsWith('!'): " + teks.endsWith("!") + "<br>");
+document.write("repeat(3): " + teks.repeat(3));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+
+    <style>
+        /* Block */
+        .block {
+            display: block;
+            background: lightblue;
+        }
+
+        /* Inline */
+        .inline {
+            display: inline;
+            background: lightgreen;
+        }
+
+        /* Inline-block */
+        .btn {
+            display: inline-block;
+            width: 120px;
+            padding: 10px;
+            background: #6C63FF;
+            color: white;
+            text-align: center;
+        }
+
+        /* None */
+        .hidden {
+            display: none;
+        }
+
+        /* Flex */
+        .flex {
+            display: flex;
+            gap: 10px;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .box {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Display</h1>
+
+    <h2>Block</h2>
+    <div class="block">Elemen Block</div>
+
+    <h2>Inline</h2>
+    <span class="inline">Elemen Inline</span>
+    <span class="inline">Elemen Inline</span>
+
+    <h2>Inline-block</h2>
+    <div class="btn">Button</div>
+    <div class="btn">Button</div>
+
+    <h2>None</h2>
+    <div class="hidden">
+        Elemen ini tidak terlihat.
+    </div>
+
+    <h2>Flex</h2>
+    <div class="flex">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+    <h2>Grid</h2>
+    <div class="grid">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+
+</body>
+</html>

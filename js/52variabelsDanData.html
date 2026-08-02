@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Variabel & Tipe Data JavaScript</title>
+</head>
+
+<body>
+
+<h1>Variabel dan Tipe Data JavaScript</h1>
+
+<script>
+// Deklarasi Variabel
+let nama = "Andi";
+const umur = 25;
+var kota = "Jakarta";
+
+// Tipe Data
+let string = "Hello";
+let number = 42;
+let decimal = 3.14;
+let boolean = true;
+let kosong = null;
+let belum;
+let arr = [1, 2, 3];
+let obj = { nama: "Andi" };
+
+// Template Literal
+let greeting = `Halo, nama saya ${nama}, umur ${umur}`;
+
+// Output
+console.log(greeting);
+
+console.log(typeof nama);      // string
+console.log(typeof umur);      // number
+console.log(typeof boolean);   // boolean
+console.log(typeof arr);       // object
+console.log(typeof obj);       // object
+
+document.write(`<p>${greeting}</p>`);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+
+    <style>
+        .box {
+            /* Translate - geser */
+            transform: translateX(50px);
+            transform: translateY(-20px);
+            transform: translate(50px, -20px);
+
+            /* Rotate - putar */
+            transform: rotate(45deg);
+            transform: rotate(-90deg);
+
+            /* Scale - ubah ukuran */
+            transform: scale(1.2);
+            transform: scaleX(1.5);
+
+            /* Skew - miringkan */
+            transform: skewX(10deg);
+
+            /* Kombinasi */
+            transform: translate(-50%, -50%) scale(1.1);
+
+            /* Transform origin */
+            transform-origin: top left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transform</h1>
+
+    <div class="box">
+        Contoh CSS Transform
+    </div>
+
+</body>
+</html>

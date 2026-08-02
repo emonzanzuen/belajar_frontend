@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Object JavaScript</title>
+</head>
+
+<body>
+
+<h1>Object JavaScript</h1>
+
+<script>
+// Object
+const user = {
+    nama: "Andi",
+    umur: 25,
+    email: "andi@email.com",
+    alamat: {
+        kota: "Jakarta",
+        kodePos: "12345"
+    },
+    hobby: ["Coding", "Gaming"],
+    sapa() {
+        return `Halo, saya ${this.nama}`;
+    }
+};
+
+// Akses Property
+document.write("<h3>Akses Property</h3>");
+document.write("Nama: " + user.nama + "<br>");
+document.write("Email: " + user["email"] + "<br>");
+document.write("Kota: " + user.alamat.kota + "<br>");
+document.write(user.sapa() + "<br><br>");
+
+// Destructuring
+const { nama, umur, email } = user;
+
+document.write("<h3>Destructuring</h3>");
+document.write(nama + "<br>");
+document.write(umur + "<br>");
+document.write(email + "<br><br>");
+
+// Object Methods
+document.write("<h3>Object Methods</h3>");
+document.write("Keys: " + Object.keys(user) + "<br>");
+document.write("Values: " + Object.values(user) + "<br>");
+document.write("Entries: " + JSON.stringify(Object.entries(user)) + "<br><br>");
+
+// Spread Operator
+const newUser = {
+    ...user,
+    role: "Developer"
+};
+
+document.write("<h3>Spread Operator</h3>");
+document.write("Role: " + newUser.role);
+
+</script>
+
+</body>
+</html>

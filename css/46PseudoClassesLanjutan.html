@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>CSS Pseudo-Class</title>
+
+<style>
+body { font-family: Arial; margin: 20px; }
+
+/* Structural */
+li:first-child { font-weight: bold; }
+li:last-child { border-bottom: none; }
+li:nth-child(2n) { background: #f5f5f5; }
+li:nth-child(3n+1) { color: blue; }
+li { padding: 5px; border-bottom: 1px solid #ccc; }
+
+/* State */
+a:hover { color: red; }
+a:active { color: darkred; }
+
+input { margin: 5px 0; border: 2px solid #ccc; }
+input:focus { border-color: blue; }
+input:disabled { opacity: .5; }
+input:checked + label { color: green; }
+input:valid { border-color: green; }
+input:invalid { border-color: red; }
+input:placeholder-shown { border-color: gray; }
+
+/* Negation */
+p:not(.special) { color: gray; }
+.special { color: crimson; }
+</style>
+
+</head>
+<body>
+
+<h1>CSS Pseudo-Class</h1>
+
+<h3>Structural</h3>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<h3>State</h3>
+<a href="#">Hover atau Klik Saya</a><br><br>
+
+<input type="text" placeholder="Nama">
+<input type="email" placeholder="Email">
+<input type="text" value="Disabled" disabled><br>
+
+<input type="checkbox" id="cek">
+<label for="cek">Setuju</label>
+
+<h3>Negation</h3>
+<p>Paragraf biasa.</p>
+<p class="special">Paragraf special.</p>
+
+</body>
+</html>

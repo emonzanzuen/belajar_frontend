@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+
+        /* Kolom berbeda ukuran */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /* Grid Items */
+        .item {
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Grid</h1>
+
+    <!-- Grid Container -->
+    <div class="grid-container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+    </div>
+
+
+    <!-- Grid dengan Kolom Berbeda -->
+    <h2>Grid Items</h2>
+
+    <div class="grid">
+        <div class="item">Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+
+</body>
+</html>

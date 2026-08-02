@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Perulangan JavaScript</title>
+</head>
+
+<body>
+
+<h1>Perulangan JavaScript</h1>
+
+<script>
+// For Loop
+document.write("<h3>For Loop</h3>");
+for (let i = 0; i < 5; i++) {
+    document.write(i + "<br>");
+}
+
+// While Loop
+document.write("<h3>While Loop</h3>");
+let i = 0;
+while (i < 5) {
+    document.write(i + "<br>");
+    i++;
+}
+
+// For...of (Array)
+document.write("<h3>For...of</h3>");
+const buah = ["Apel", "Mangga", "Jeruk"];
+for (const item of buah) {
+    document.write(item + "<br>");
+}
+
+// For...in (Object)
+document.write("<h3>For...in</h3>");
+const user = {
+    nama: "Andi",
+    umur: 25
+};
+
+for (const key in user) {
+    document.write(key + ": " + user[key] + "<br>");
+}
+
+// Break & Continue
+document.write("<h3>Break & Continue</h3>");
+for (let j = 0; j < 10; j++) {
+    if (j === 3) continue;
+    if (j === 7) break;
+    document.write(j + "<br>");
+}
+</script>
+
+</body>
+</html>

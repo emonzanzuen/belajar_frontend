@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow & Visibility</title>
+
+    <style>
+        /* Overflow */
+        .box {
+            width: 200px;
+            height: 80px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #333;
+        }
+
+        .visible {
+            overflow: visible;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+
+        /* Visibility */
+        .visibility-hidden {
+            visibility: hidden;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .opacity {
+            opacity: 0;
+        }
+
+        /* Object-fit */
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow & Visibility</h1>
+
+    <h2>Overflow</h2>
+
+    <div class="box visible">
+        <strong>Visible:</strong>
+        Konten yang terlalu panjang akan keluar dari box.
+    </div>
+
+    <div class="box hidden">
+        <strong>Hidden:</strong>
+        Konten yang terlalu panjang akan dipotong.
+    </div>
+
+    <div class="box scroll">
+        <strong>Scroll:</strong>
+        Konten memiliki scrollbar.
+    </div>
+
+    <div class="box auto">
+        <strong>Auto:</strong>
+        Scrollbar muncul jika diperlukan.
+    </div>
+
+
+    <h2>Visibility</h2>
+
+    <p>Normal</p>
+
+    <p class="visibility-hidden">
+        Visibility Hidden
+    </p>
+
+    <p class="display-none">
+        Display None
+    </p>
+
+    <p class="opacity">
+        Opacity 0
+    </p>
+
+
+    <h2>Object-fit</h2>
+
+    <img src="gambar.jpg" alt="Contoh Object Fit">
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Function JavaScript</title>
+</head>
+
+<body>
+
+<h1>Function JavaScript</h1>
+
+<script>
+// Function Declaration
+function sapa(nama) {
+    return `Halo, ${nama}!`;
+}
+
+// Function Expression
+const tambah = function(a, b) {
+    return a + b;
+};
+
+// Arrow Function
+const kali = (a, b) => a * b;
+const kuadrat = x => x * x;
+const hello = () => "Hello!";
+
+// Default Parameter
+const greet = (nama = "Teman") => `Halo, ${nama}!`;
+
+// Rest Parameter
+const jumlahkan = (...angka) => {
+    return angka.reduce((total, n) => total + n, 0);
+};
+
+// Output
+document.write("<h3>Hasil Function</h3>");
+document.write(sapa("Andi") + "<br>");
+document.write("5 + 3 = " + tambah(5, 3) + "<br>");
+document.write("5 × 3 = " + kali(5, 3) + "<br>");
+document.write("Kuadrat 4 = " + kuadrat(4) + "<br>");
+document.write(hello() + "<br>");
+document.write(greet() + "<br>");
+document.write("Jumlah = " + jumlahkan(1, 2, 3, 4));
+</script>
+
+</body>
+</html>

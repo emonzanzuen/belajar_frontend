@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        /* Reset */
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            /* Content */
+            width: 300px;
+            height: 200px;
+
+            /* Padding */
+            padding: 20px;
+
+            /* Border */
+            border: 2px solid #6C63FF;
+            border-radius: 12px;
+
+            /* Margin */
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="box">
+        <h2>Box Model</h2>
+
+        <p>
+            Contoh penggunaan width, height,
+            padding, border, dan margin.
+        </p>
+    </div>
+
+</body>
+</html>

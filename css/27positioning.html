@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+
+    <style>
+        /* Static */
+        .static {
+            position: static;
+            background: lightblue;
+            padding: 10px;
+        }
+
+        /* Relative */
+        .relative {
+            position: relative;
+            top: 10px;
+            left: 20px;
+            background: lightgreen;
+            padding: 10px;
+        }
+
+        /* Absolute */
+        .parent {
+            position: relative;
+            height: 100px;
+            background: #eee;
+            margin-top: 20px;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #6C63FF;
+            color: white;
+            padding: 10px;
+        }
+
+        /* Fixed */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 10px;
+            background: #333;
+            color: white;
+            z-index: 100;
+        }
+
+        /* Sticky */
+        .sidebar {
+            position: sticky;
+            top: 0;
+            padding: 10px;
+            background: orange;
+        }
+
+        .content {
+            height: 500px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        Fixed Navbar
+    </div>
+
+    <div class="content">
+
+        <h1>CSS Position</h1>
+
+        <h2>Static</h2>
+        <div class="static">
+            Position Static
+        </div>
+
+        <h2>Relative</h2>
+        <div class="relative">
+            Position Relative
+        </div>
+
+        <h2>Absolute</h2>
+        <div class="parent">
+            Parent
+            <div class="absolute">
+                Position Absolute
+            </div>
+        </div>
+
+        <h2>Sticky</h2>
+        <div class="sidebar">
+            Position Sticky
+        </div>
+
+        <p>
+            Scroll halaman untuk melihat efek sticky dan fixed.
+        </p>
+
+    </div>
+
+</body>
+</html>

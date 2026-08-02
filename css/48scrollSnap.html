@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Scroll Snap</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+/* Horizontal Scroll Snap */
+.gallery{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    gap:10px;
+}
+
+.gallery-item{
+    flex:0 0 100%;
+    height:200px;
+    scroll-snap-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    color:white;
+}
+
+.gallery-item:nth-child(1){background:tomato;}
+.gallery-item:nth-child(2){background:royalblue;}
+.gallery-item:nth-child(3){background:seagreen;}
+
+/* Vertical Scroll Snap */
+.sections{
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
+}
+
+.section{
+    height:100vh;
+    scroll-snap-align:start;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    color:white;
+}
+
+.s1{background:purple;}
+.s2{background:orange;}
+.s3{background:teal;}
+</style>
+</head>
+
+<body>
+
+<h2>Horizontal Scroll Snap</h2>
+
+<div class="gallery">
+    <div class="gallery-item">Slide 1</div>
+    <div class="gallery-item">Slide 2</div>
+    <div class="gallery-item">Slide 3</div>
+</div>
+
+<h2>Vertical Scroll Snap</h2>
+
+<div class="sections">
+    <div class="section s1">Section 1</div>
+    <div class="section s2">Section 2</div>
+    <div class="section s3">Section 3</div>
+</div>
+
+</body>
+</html>

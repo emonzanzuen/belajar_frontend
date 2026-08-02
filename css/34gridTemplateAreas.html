@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Template Areas</title>
+
+    <style>
+        .page {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "sidebar main aside"
+                "footer footer footer";
+            grid-template-columns: 200px 1fr 200px;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .aside {
+            grid-area: aside;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <header class="header">
+            <h1>Header</h1>
+        </header>
+
+        <aside class="sidebar">
+            <p>Sidebar</p>
+        </aside>
+
+        <main class="main">
+            <h2>Konten Utama</h2>
+            <p>Ini adalah bagian konten utama.</p>
+        </main>
+
+        <aside class="aside">
+            <p>Aside</p>
+        </aside>
+
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

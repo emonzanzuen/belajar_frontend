@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float dan Multi-column Layout</title>
+
+    <style>
+        /* Float - cara lama untuk layout */
+        .image {
+            float: left;
+            margin: 0 1rem 1rem 0;
+            width: 200px;
+        }
+
+        /* Clearfix */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Multi-column layout */
+        .article {
+            columns: 3;
+            column-gap: 2rem;
+            column-rule: 1px solid #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Float dan Multi-column Layout</h1>
+
+    <!-- Float dan Clearfix -->
+    <div class="clearfix">
+        <img
+            src="image.jpg"
+            alt="Contoh gambar"
+            class="image">
+
+        <p>
+            Ini adalah contoh penggunaan float untuk membuat
+            teks mengalir di samping gambar.
+        </p>
+
+        <p>
+            Clearfix digunakan untuk memastikan elemen pembungkus
+            tetap mencakup elemen yang menggunakan float.
+        </p>
+    </div>
+
+    <!-- Multi-column Layout -->
+    <h2>Multi-column Layout</h2>
+
+    <div class="article">
+        <p>
+            Ini adalah contoh teks yang menggunakan multi-column layout.
+            Konten akan dibagi menjadi tiga kolom dengan jarak antar kolom.
+            Setiap kolom juga memiliki garis pemisah.
+        </p>
+
+        <p>
+            CSS columns dapat digunakan untuk membuat tampilan teks
+            seperti layout artikel pada koran atau majalah.
+        </p>
+
+        <p>
+            Properti column-gap digunakan untuk mengatur jarak antar kolom,
+            sedangkan column-rule digunakan untuk memberikan garis pemisah.
+        </p>
+    </div>
+
+</body>
+</html>

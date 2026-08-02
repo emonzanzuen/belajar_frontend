@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh Flexbox Layout</title>
+
+    <style>
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        /* Centering sempurna */
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Card Grid dengan Flexbox */
+        .card-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+
+        /* Holy Grail Layout */
+        .layout {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div>Logo</div>
+
+        <div>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Centering -->
+    <div class="center">
+        <h1>Konten di Tengah</h1>
+    </div>
+
+
+    <!-- Card Grid -->
+    <div class="card-grid">
+
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>Isi card pertama.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>Isi card kedua.</p>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>Isi card ketiga.</p>
+        </div>
+
+    </div>
+
+
+    <!-- Holy Grail Layout -->
+    <div class="layout">
+
+        <header>
+            <h2>Header</h2>
+        </header>
+
+        <main class="main-content">
+            <aside>
+                <p>Sidebar</p>
+            </aside>
+
+            <section>
+                <p>Konten Utama</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

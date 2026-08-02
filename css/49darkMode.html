@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode CSS</title>
+
+<style>
+:root{
+    --bg:#ffffff;
+    --text:#1a1a2e;
+}
+
+@media (prefers-color-scheme: dark){
+    :root{
+        --bg:#1a1a2e;
+        --text:#e2e8f0;
+    }
+}
+
+[data-theme="dark"]{
+    --bg:#1a1a2e;
+    --text:#e2e8f0;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:Arial, sans-serif;
+    text-align:center;
+    padding:40px;
+    transition:background .3s, color .3s;
+}
+
+button{
+    padding:10px 20px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Dark Mode CSS</h1>
+<p>Contoh penggunaan prefers-color-scheme dan manual toggle.</p>
+
+<button onclick="toggleTheme()">Ganti Tema</button>
+
+<script>
+function toggleTheme(){
+    document.body.dataset.theme =
+        document.body.dataset.theme === "dark" ? "" : "dark";
+}
+</script>
+
+</body>
+</html>

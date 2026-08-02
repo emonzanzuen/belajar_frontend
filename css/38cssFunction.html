@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Functions</title>
+
+    <style>
+        .box {
+            /* calc() - perhitungan */
+            width: calc(100% - 40px);
+            height: calc(100vh - 80px);
+
+            /* clamp() - responsive font */
+            font-size: clamp(1rem, 2.5vw, 2rem);
+
+            /* min() & max() */
+            width: min(100%, 800px);
+            padding: max(1rem, 5vw);
+
+            /* attr() - ambil atribut */
+        }
+
+        .box::before {
+            content: attr(data-label);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Functions</h1>
+
+    <div class="box" data-label="Label dari atribut data-label">
+        Konten Box
+    </div>
+
+</body>
+</html>

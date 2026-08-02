@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Array JavaScript</title>
+</head>
+
+<body>
+
+<h1>Array JavaScript</h1>
+
+<script>
+// Array
+const buah = ["Apel", "Mangga", "Jeruk"];
+
+// Akses
+document.write("<h3>Akses Array</h3>");
+document.write("Buah pertama: " + buah[0] + "<br>");
+document.write("Jumlah data: " + buah.length + "<br><br>");
+
+// Method Array
+buah.push("Pisang");
+buah.pop();
+buah.unshift("Anggur");
+buah.shift();
+
+document.write("<h3>Method Array</h3>");
+document.write(buah.join(", ") + "<br><br>");
+
+// ES6 Array Methods
+const angka = [1, 2, 3, 4, 5];
+
+document.write("<h3>Array ES6</h3>");
+document.write("map(): " + angka.map(n => n * 2) + "<br>");
+document.write("filter(): " + angka.filter(n => n > 3) + "<br>");
+document.write("find(): " + angka.find(n => n > 3) + "<br>");
+document.write("reduce(): " + angka.reduce((sum, n) => sum + n, 0) + "<br>");
+document.write("includes(3): " + angka.includes(3) + "<br>");
+document.write("indexOf(3): " + angka.indexOf(3) + "<br><br>");
+
+// forEach
+document.write("<h3>forEach()</h3>");
+angka.forEach(n => document.write(n + "<br>"));
+
+// Destructuring
+const [pertama, kedua] = buah;
+const [...sisanya] = buah.slice(1);
+
+document.write("<h3>Destructuring</h3>");
+document.write("Pertama: " + pertama + "<br>");
+document.write("Kedua: " + kedua + "<br>");
+document.write("Sisanya: " + sisanya);
+
+</script>
+
+</body>
+</html>

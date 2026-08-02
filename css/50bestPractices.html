@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>BEM Methodology</title>
+
+<style>
+/* Block */
+.card{
+    width:250px;
+    padding:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-family:Arial, sans-serif;
+}
+
+/* Element */
+.card__image{
+    width:100%;
+    border-radius:5px;
+}
+
+.card__title{
+    margin:10px 0;
+}
+
+.card__button{
+    padding:8px 12px;
+    border:none;
+    cursor:pointer;
+}
+
+/* Modifier */
+.card--featured{
+    border:2px solid gold;
+    background:#fff8dc;
+}
+
+.card__button--primary{
+    background:#007bff;
+    color:white;
+}
+</style>
+
+</head>
+<body>
+
+<div class="card card--featured">
+    <img src="https://picsum.photos/250/150" class="card__image" alt="Gambar">
+
+    <h3 class="card__title">Kartu BEM</h3>
+
+    <button class="card__button card__button--primary">
+        Detail
+    </button>
+</div>
+
+</body>
+</html>
